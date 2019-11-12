@@ -13,6 +13,14 @@ import java.util.ArrayList;
  */
 public class Joueur {
     int compteurPoints;
+
+    public void setCompteurPoints(int compteurPoints) {
+        this.compteurPoints = compteurPoints;
+    }
+
+    public int getCompteurPoints() {
+        return compteurPoints;
+    }
     String nom;
     ArrayList<Carte> tabCarte;
     

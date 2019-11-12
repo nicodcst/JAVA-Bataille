@@ -50,17 +50,14 @@ public class Bataille {
         
         System.out.println(String.format("%-15s %-15s %-15s\n", j1.nom , j2.nom , "gagnant"));
         
-        boolean jouable = true;
-        while(jouable) {
+        while(j1.tabCarte.size() >0 || j2.tabCarte.size() >0) {
             if(j1.tabCarte.size()==52) {
                 System.out.println(j1.nom + " a gagné");
                 System.out.println(j1.compteurPoints + " " + j1.tabCarte.size());
-                jouable = false;
             }
             if(j2.tabCarte.size()==52) {
                 System.out.println(j2.nom + " a gagné");
                 System.out.println(j2.compteurPoints + " " + j1.tabCarte.size());
-                jouable = false;
             }
             
             Carte1 = j1.tirerCarte();
